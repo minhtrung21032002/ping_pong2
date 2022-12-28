@@ -30,13 +30,13 @@ public class Paddle extends Rectangle implements KeyListener {
 
 		case 1:
 
-			if(e.getKeyCode()==KeyEvent.VK_W) {
+			if(e.getKeyCode()==KeyEvent.VK_W) { // press W to increase speed which will increase y velocity
 
 				setYDirection(-speed);
 
 			}
 
-			if(e.getKeyCode()==KeyEvent.VK_S) {
+			if(e.getKeyCode()==KeyEvent.VK_S) { // press s to decrease speed which will increase y velocity
 
 				setYDirection(speed);
 
@@ -46,13 +46,13 @@ public class Paddle extends Rectangle implements KeyListener {
 
 		case 2:
 
-			if(e.getKeyCode()==KeyEvent.VK_UP) {
+			if(e.getKeyCode()==KeyEvent.VK_UP) { // using UP arrow instead of W
 
 				setYDirection(-speed);
 
 			}
 
-			if(e.getKeyCode()==KeyEvent.VK_DOWN) {
+			if(e.getKeyCode()==KeyEvent.VK_DOWN) { // using DOWN arrow
 
 				setYDirection(speed);
 
