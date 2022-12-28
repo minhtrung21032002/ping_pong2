@@ -22,7 +22,7 @@ public class Ball extends Rectangle{
 
 		random = new Random();
 
-		int randomXDirection = random.nextInt(2);
+		int randomXDirection = random.nextInt(2); // intital x direction randomly or randomly change x when ball moving , if it is 0, we can decrease or increase to make it move ..., the rest just like paddle
 
 		if(randomXDirection == 0)
 
