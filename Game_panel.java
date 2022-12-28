@@ -138,22 +138,14 @@ import javax.swing.*;
     
             if(ball.intersects(paddle1)) {
     
-                ball.xVelocity = ball.xVelocity*-1; // flip the ball to other side
+                ball.xVelocity = ball.xVelocity*-1; // flip the ball to other side of x direction
     
                 ball.xVelocity++; 
 
-                if(ball.yVelocity>0){
+        
+                ball.yVelocity = ball.yVelocity*-1; // flip the ball to other sign of y direction
 
-				ball.yVelocity++; //optional for more difficulty
-
-                }else{
-
-				    ball.yVelocity--;}
-
-
-               /*  ball.yVelocity = ball.yVelocity*-1;
-
-                ball.yVelocity++; */ 
+                ball.yVelocity++; 
     
                 ball.setXDirection(ball.xVelocity);
     
@@ -167,18 +159,9 @@ import javax.swing.*;
     
                 ball.xVelocity++; //optional for more difficulty
 
-                if(ball.yVelocity>0){
+                ball.yVelocity = ball.yVelocity*-1;
 
-				    ball.yVelocity++; }//optional for more difficulty
-
-			    else{
-
-				    ball.yVelocity--;}
-
-
-                /* ball.yVelocity = ball.yVelocity*-1;
-
-                ball.yVelocity++; */
+                ball.yVelocity++;
     
                 ball.setXDirection(-ball.xVelocity); // in this case this because we need to opposite the sign
     
